@@ -1,0 +1,9 @@
+{
+    "root": true,
+    "extends": "../node_modules/ruff-standard/eslint-module.json",
+    "globals": {
+        "Proxy": true,
+        "uv": true,
+        "Duktape": true
+    }
+}

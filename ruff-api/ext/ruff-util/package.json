@@ -1,0 +1,7 @@
+{
+    "name": "ruff-util",
+    "version": "0.1.0",
+    "description": "Some utilities for in-house SDK developers.",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

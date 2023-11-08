@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "src": "ruff_makefile",
+      "target": "package/ruff_package/packages/ruff/Makefile"
+    },
+    {
+      "src": "ruffd_makefile",
+      "target": "package/ruff_package/packages/ruffd/Makefile"
+    }
+  ]
+}

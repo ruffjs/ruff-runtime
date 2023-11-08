@@ -1,0 +1,15 @@
+{
+    "root": true,
+    "extends": "./node_modules/ruff-standard/eslint-node.json",
+    "rules": {
+        "no-console": "off",
+        "prefer-reflect": "off"
+    },
+    "globals": {
+        "Duktape": true,
+        "uv": true,
+        "describe": true,
+        "it": true,
+        "before": true
+    }
+}

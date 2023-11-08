@@ -1,0 +1,24 @@
+ADD_LIBRARY(duv
+    duv.c
+    refs.c
+    utils.c
+    loop.c
+    req.c
+    handle.c
+    timer.c
+    stream.c
+    tcp.c
+    udp.c
+    pipe.c
+    tty.c
+    fs.c
+    poll.c
+    misc.c
+    utils.c
+    uv_schema.c
+    process.c
+    spawn_sync.c
+    callbacks.c
+    miniz.c
+    dns.c
+)

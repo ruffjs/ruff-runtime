@@ -1,0 +1,7 @@
+{
+  "name": "buffer",
+  "version": "1.0.0",
+  "description": "handle binary data",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

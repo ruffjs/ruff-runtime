@@ -1,0 +1,7 @@
+{
+  "name": "process",
+  "version": "1.0.0",
+  "description": "Proces releated utility",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

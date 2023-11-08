@@ -1,0 +1,69 @@
+#
+# Copyright (C) 2015 NanChao.Inc
+#
+# This software is created by nanchao.org
+#
+
+include $(TOPDIR)/rules.mk
+include $(INCLUDE_DIR)/kernel.mk
+
+PKG_NAME:=ruff-sdk
+RUFF_TMP_DIR:=$(TOPDIR)/tmp_for_ruff/$(PKG_NAME)
+#PKG_VERSION:=0.8.0
+PKG_RELEASE:=1
+
+ifdef GIT_BRANCH
+	BRANCH:=$(GIT_BRANCH:origin/%=%)
+else
+	BRANCH:=$(strip $(shell git rev-parse --abbrev-ref HEAD))
+endif
+
+ifeq ($(findstring release,$(BRANCH)),release)
+BRANCH:=release
+endif
+
+BASE_PROJECT_NAME=ruff-mips-board-dist
+
+ifeq ($(BRANCH), master)
+	PROJECT_NAME:=$(BASE_PROJECT_NAME)
+else
+	PROJECT_NAME:=$(BASE_PROJECT_NAME)-$(BRANCH)
+endif
+
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
+PKG_SOURCE_URL:=file://$(TOPDIR)/dist/deps/
+
+define ruff_get_pkg_name
+PKG_SOURCE:=ruff-runtime-rt5350.zip
+endef
+
+$(eval $(call ruff_get_pkg_name))
+PKG_BASE_NAME:=$(basename $(PKG_SOURCE))
+
+include $(INCLUDE_DIR)/package.mk
+define Package/ruff
+	SECTION:=utils
+	CATEGORY:=Utilities
+	TITLE:=Ruff Main Process
+	DEPENDS:=+libpthread +libm +libdl +librt
+endef
+
+define Build/Prepare
+	unzip $(DL_DIR)/$(PKG_SOURCE) -d $(PKG_BUILD_DIR)/
+	cp $(TOPDIR)/template/Makefile $(PKG_BUILD_DIR)/Makefile
+endef
+
+define Package/ruff/description
+	RUFF Core
+endef
+
+PKG_INSTALL_DIR:=ruff/sdk/bin/
+PKG_MODULE_DIR:=ruff/sdk/
+define Package/ruff/install
+	echo "Here is Package/install"
+	$(INSTALL_DIR) $(1)/$(PKG_INSTALL_DIR)
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/bin/ruff $(1)/$(PKG_INSTALL_DIR)
+	$(CP) $(PKG_BUILD_DIR)/ruff_modules/ $(1)/$(PKG_MODULE_DIR)
+endef
+
+$(eval $(call BuildPackage,ruff))

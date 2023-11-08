@@ -1,0 +1,7 @@
+{
+    "name": "network-manager",
+    "version": "0.1.0",
+    "description": "Manager networks.",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

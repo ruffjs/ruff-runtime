@@ -1,0 +1,7 @@
+{
+  "name": "launcher",
+  "version": "1.0.4",
+  "description": "Launch ruff app",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

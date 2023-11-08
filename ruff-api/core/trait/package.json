@@ -1,0 +1,7 @@
+{
+  "name": "trait",
+  "version": "1.0.0",
+  "description": "A trait utility",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

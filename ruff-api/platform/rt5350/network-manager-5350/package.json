@@ -1,0 +1,7 @@
+{
+    "name": "network-manager-5350",
+    "version": "0.1.0",
+    "description": "Netwrok manager implementation for rt5350.",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

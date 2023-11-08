@@ -1,0 +1,7 @@
+{
+    "name": "mbb-connection",
+    "version": "0.1.0",
+    "description": "Mobile Broadband connection.",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

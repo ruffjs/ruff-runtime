@@ -1,0 +1,7 @@
+{
+    "name": "mobile-manager-5350",
+    "version": "0.1.0",
+    "description": "Mobile connection manager implementation for 5350.",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

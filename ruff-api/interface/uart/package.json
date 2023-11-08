@@ -1,0 +1,7 @@
+{
+  "name": "uart",
+  "version": "0.0.9",
+  "description": "Uart interface",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

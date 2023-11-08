@@ -1,0 +1,7 @@
+{
+    "name": "ruff-driver-runner",
+    "version": "0.1.0",
+    "description": "Ruff driver test runner",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "_console_eval",
+    "version": "1.0.0",
+    "description": "Console eval help console work",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

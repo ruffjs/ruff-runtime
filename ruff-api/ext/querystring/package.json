@@ -1,0 +1,7 @@
+{
+  "name": "querystring",
+  "version": "1.0.0",
+  "description": "Utilities for dealing with query strings",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

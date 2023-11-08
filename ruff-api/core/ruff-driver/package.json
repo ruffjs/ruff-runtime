@@ -1,0 +1,7 @@
+{
+  "name": "ruff-driver",
+  "version": "0.1.0",
+  "description": "Ruff core module to build driver",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

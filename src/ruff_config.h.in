@@ -1,0 +1,6 @@
+#ifndef RUFF_CONFIG_H
+#define RUFF_CONFIG_H
+
+#define RUFF_VERSION "@RUFF_VERSION@"
+
+#endif

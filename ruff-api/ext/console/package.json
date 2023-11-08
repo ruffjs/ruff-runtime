@@ -1,0 +1,7 @@
+{
+  "name": "console",
+  "version": "1.0.0",
+  "description": "print information to stdout or stderr",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

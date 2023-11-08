@@ -1,0 +1,66 @@
+#
+# Copyright (C) 2015 NanChao.Inc
+#
+# This software is created by nanchao.org
+#
+
+include $(TOPDIR)/rules.mk
+include $(INCLUDE_DIR)/kernel.mk
+
+PKG_NAME:=ruffd
+PKG_VERSION:=0.8.0
+PKG_RELEASE:=1
+
+ifdef GIT_BRANCH
+	BRANCH:=$(GIT_BRANCH:origin/%=%)
+else
+	BRANCH:=$(strip $(shell git rev-parse --abbrev-ref HEAD))
+endif
+
+ifeq ($(findstring release,$(BRANCH)),release)
+BRANCH:=release
+endif
+
+BASE_PROJECT_NAME=ruffd
+ifeq ($(BRANCH), master)
+	PROJECT_NAME:=$(BASE_PROJECT_NAME)
+else
+	PROJECT_NAME:=$(BASE_PROJECT_NAME)-$(BRANCH)
+endif
+
+PKG_SOURCE:=ruffd.zip
+PKG_SOURCE_URL:=file:///$(TOPDIR)/dist/deps/
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+
+include $(INCLUDE_DIR)/package.mk
+
+define Package/ruffd
+	SECTION:=utils
+	CATEGORY:=Utilities
+	TITLE:=Ruffd Main Process
+	DEPENDS:=+libc +libpthread +libm +libdl
+endef
+
+#rm -f $(DL_DIR)/$(PKG_SOURCE)
+#rm -rf  $(PKG_BUILD_DIR) 
+
+define Build/Prepare
+	unzip $(DL_DIR)/$(PKG_SOURCE) -d $(PKG_BUILD_DIR)/
+	cp $(TOPDIR)/template/Makefile $(PKG_BUILD_DIR)
+endef
+
+define Package/ruffd/description
+	RUFFD
+endef
+
+define Package/ruffd/install
+	echo "Here is Package/install"
+	$(INSTALL_DIR) $(1)/etc/init.d/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/ruffd/scripts/ruffd $(1)/etc/init.d/
+	$(INSTALL_DIR) $(1)/etc/ruff/
+	$(INSTALL_DIR) $(1)/ruff/ruffd/src
+	$(CP) $(PKG_BUILD_DIR)/ruffd/src/*  $(1)/ruff/ruffd/src
+	$(CP) $(PKG_BUILD_DIR)/ruffd/package.json $(1)/ruff/ruffd/
+endef
+
+$(eval $(call BuildPackage,ruffd))

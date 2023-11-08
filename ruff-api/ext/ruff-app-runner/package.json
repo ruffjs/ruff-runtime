@@ -1,0 +1,7 @@
+{
+  "name": "ruff-app-runner",
+  "version": "0.1.0",
+  "description": "Ruff application test runner",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "timers",
+  "version": "1.0.0",
+  "description": "A timer utility",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

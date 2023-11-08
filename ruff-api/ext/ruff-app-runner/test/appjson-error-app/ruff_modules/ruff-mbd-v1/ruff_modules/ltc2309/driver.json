@@ -1,0 +1,37 @@
+{
+    "models": [],
+    "inputs": {
+        "i2c": {
+            "type": "i2c",
+            "args": {
+                "address": 8
+            }
+        }
+    },
+    "outputs": {
+        "ch0": {
+            "type": "adc"
+        },
+        "ch1": {
+            "type": "adc"
+        },
+        "ch2": {
+            "type": "adc"
+        },
+        "ch3": {
+            "type": "adc"
+        },
+        "ch4": {
+            "type": "adc"
+        },
+        "ch5": {
+            "type": "adc"
+        },
+        "ch6": {
+            "type": "adc"
+        },
+        "ch7": {
+            "type": "adc"
+        }
+    }
+}

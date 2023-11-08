@@ -1,0 +1,88 @@
+{
+    "models": [],
+    "inputs": {
+        "i2c": {
+            "type": "i2c",
+            "args": {
+                "address": {
+                    "type": "number",
+                    "default": 85
+                }
+            }
+        }
+    },
+    "outputs": {
+        "pwm0": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        },
+        "ch1": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        },
+        "ch2": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        },
+        "ch3": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        },
+        "ch4": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        },
+        "ch5": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        },
+        "ch6": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        },
+        "ch7": {
+            "type": "pwm",
+            "args": {
+                "frequency": {
+                    "type": "number",
+                    "default": 200
+                }
+            }
+        }
+    }
+}

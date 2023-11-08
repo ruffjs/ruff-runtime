@@ -1,0 +1,7 @@
+{
+  "name": "assert",
+  "version": "1.0.0",
+  "description": "commonjs assert module for ruff",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

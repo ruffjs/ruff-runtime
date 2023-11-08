@@ -1,0 +1,12 @@
+{
+    "name": "runner-test",
+    "version": "0.1.0",
+    "description": "test demo",
+    "author": "xxcxy",
+    "ruff": {
+        "dependencies": {
+            "ruff-mbd-v1": "*",
+            "hc-sr501": "1.0.0"
+        }
+    }
+}

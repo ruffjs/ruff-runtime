@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf android-toolchain out
+
+source ./android-configure $1 gyp
+make -j16 -C out

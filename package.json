@@ -1,0 +1,56 @@
+{
+  "name": "ruff",
+  "version": "1.12.0",
+  "description": "Ruff is a JavaScript runtime built for hardware development",
+  "author": "Nanchao",
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "exec-cli": "^0.1.0",
+    "fs-extra": "^0.30.0",
+    "github-slugger": "^1.1.1",
+    "glob": "^7.0.5",
+    "gulp": "^4.0.2",
+    "gulp-filter": "^3.0.1",
+    "gulp-header": "^1.7.1",
+    "gulp-if": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "henge": "^0.2.10",
+    "henge-ruff-jenkins": "^0.3.2",
+    "marked": "^0.3.5",
+    "merge-stream": "^1.0.0",
+    "node-fetch": "^1.6.1",
+    "open": "0.0.5",
+    "ruff-standard": "^0.2.2",
+    "semver": "^5.3.0",
+    "thenfail": "^0.4.10",
+    "through2": "^2.0.1",
+    "tmp": "0.0.29",
+    "villa": "^0.2.5",
+    "vinyl": "^1.1.1",
+    "yargs": "^4.2.0",
+    "which": "^1.2.11"
+  },
+  "scripts": {
+    "postinstall": "npm run update-hooks",
+    "update-hooks": "node tools/update-hooks.js",
+    "deps-rap-install": "exec dist/deps/rap/bin/rap install",
+    "fetch-nodejs-changes": "node tools/fetch-nodejs-changes.js",
+    "istanbul": "exec build/ruff/bin/ruff ruff_modules/istanbul/lib/cli.js",
+    "lint": "eslint --quiet modules/ruff_modules/**/*.js",
+    "gulp": "gulp",
+    "test": "gulp test-modules",
+    "report": "npm run istanbul -- report && (open coverage/lcov-report/index.html || start coverage/lcov-report/index.html)",
+    "dist": "henge dist ruff",
+    "dist-embedded": "henge dist ruff-embedded",
+    "dist-x86": "henge dist ruff-embedded -l"
+  },
+  "dependencies": {},
+  "ruff": {
+    "dependencies": {
+      "istanbul": "^0.4.5"
+    },
+    "devDependencies": {
+      "t": "^0.1.6"
+    }
+  }
+}

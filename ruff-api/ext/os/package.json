@@ -1,0 +1,7 @@
+{
+  "name": "os",
+  "version": "1.0.0",
+  "description": "OS related utility",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

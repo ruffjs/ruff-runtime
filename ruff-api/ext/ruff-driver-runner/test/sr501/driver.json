@@ -1,0 +1,10 @@
+{
+    "support_devices": [
+        "SR501"
+    ],
+    "inputs": {
+        "gpio": {
+            "type": "gpio"
+        }
+    }
+}

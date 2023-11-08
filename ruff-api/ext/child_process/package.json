@@ -1,0 +1,7 @@
+{
+  "name": "child_process",
+  "version": "0.1.0",
+  "description": "child_process",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

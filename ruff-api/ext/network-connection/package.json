@@ -1,0 +1,7 @@
+{
+    "name": "network-connection",
+    "version": "0.1.0",
+    "description": "The core module to build network connections.",
+    "author": "Ruff",
+    "main": "src/index.js"
+}

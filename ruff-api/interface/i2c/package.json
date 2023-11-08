@@ -1,0 +1,7 @@
+{
+  "name": "i2c",
+  "version": "1.0.0",
+  "description": "The I2C module",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

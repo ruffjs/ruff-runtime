@@ -1,0 +1,5 @@
+{
+    "name": "https",
+    "description": "HTTPS Module",
+    "main": "src/index.js"
+}

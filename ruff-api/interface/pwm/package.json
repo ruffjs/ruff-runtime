@@ -1,0 +1,7 @@
+{
+  "name": "pwm",
+  "version": "0.1.0",
+  "description": "Pwm interface",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "zlib",
+  "version": "1.0.0",
+  "description": "Zlib related utility",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

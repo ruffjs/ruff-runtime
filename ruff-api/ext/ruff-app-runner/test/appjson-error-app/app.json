@@ -1,0 +1,7 @@
+{
+    "devices": [
+        {
+            "id": "sr501",
+            "model": "sr501",
+            "driver": "hc-sr501",
+            "inputs": {

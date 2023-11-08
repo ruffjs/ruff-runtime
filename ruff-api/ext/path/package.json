@@ -1,0 +1,7 @@
+{
+  "name": "path",
+  "version": "1.0.0",
+  "description": "handling and transforming file paths",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

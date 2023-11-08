@@ -1,0 +1,33 @@
+{
+    "models": [],
+    "inputs":
+    {
+        "i2c": {
+            "type" : "i2c",
+            "args" : {
+                "address": {
+                    "type": "number",
+                    "default": 36
+                }
+            }
+        }
+    },
+    "outputs": {
+        "gpio0": {"type": "gpio"},
+        "gpio1": {"type": "gpio"},
+        "gpio2": {"type": "gpio"},
+        "gpio3": {"type": "gpio"},
+        "gpio4": {"type": "gpio"},
+        "gpio5": {"type": "gpio"},
+        "gpio6": {"type": "gpio"},
+        "gpio7": {"type": "gpio"},
+        "gpio8": {"type": "gpio"},
+        "gpio9": {"type": "gpio"},
+        "gpio10": {"type": "gpio"},
+        "gpio11": {"type": "gpio"},
+        "gpio12": {"type": "gpio"},
+        "gpio13": {"type": "gpio"},
+        "gpio14": {"type": "gpio"},
+        "gpio15": {"type": "gpio"}
+    }
+}

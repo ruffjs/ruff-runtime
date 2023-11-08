@@ -1,0 +1,9 @@
+[
+    {
+        "name": "x86",
+        "variables": {
+            "arch": "x86",
+            "cc": "gcc"
+        }
+    }
+]

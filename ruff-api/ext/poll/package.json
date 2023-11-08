@@ -1,0 +1,7 @@
+{
+  "name": "poll",
+  "version": "0.1.0",
+  "description": "The poll module",
+  "author": "Ruff",
+  "main": "src/index.js"
+}

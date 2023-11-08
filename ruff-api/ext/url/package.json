@@ -1,0 +1,7 @@
+{
+    "name": "url",
+    "version": "1.0.0",
+    "description": "Url utility",
+    "author": "Ruff",
+    "main": "src/index.js"
+}
